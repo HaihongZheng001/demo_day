@@ -6,7 +6,7 @@ body{
 	margin:1%;
 	padding:1%;
 	font-size:150%;
-	background-image: url('../images/background.png')
+	/* background-image: url('../images/background.png') */
 	
 }
 
@@ -60,13 +60,13 @@ img:hover {
 }
 */
 
-img:nth-child(even):hover{
+/* img:nth-child(even):hover{
 	background-color: rgb(133, 216, 255);
 	border: 3px solid rgb(16, 12, 236);
 	height: 300px;
     width: 300px;
 
-}
+} */
 
 /*Make the h2 heading match h1*/
 
@@ -83,7 +83,6 @@ p, h1, h2 {
     padding: 20px;
 	color: black;
 }
-
 
 
 a, p {
@@ -152,6 +151,7 @@ nav a:visited{color: rgba(0, 0, 0, 0.849)}
 /*FORM*/
 form {
 	margin-top: 60px;
+	margin-bottom:80px ;
 	background-color: rgb(233, 247, 251);
 }
 
@@ -296,6 +296,42 @@ img {
 	/* border: 10px solid #b1d62a; */
 }
 
+
+/* testing flip-card keyboard access */
+/* .flip-card:hover, .flip-card-front:hover {
+	transform: rotateY(-180deg);
+}
+
+.flip-card:hover, .flip-card-back:hover {
+	transform: rotateY(0deg);
+}
+*/
+
+ .flip-card-front:focus {
+	transform: rotateY(-180deg);
+}
+
+ .flip-card-back:focus {
+	transform: rotateY(0deg);
+}
+
+.flip-card-front:active {
+	transform: rotateY(-180deg);
+}
+
+.flip-card-back:active {
+	transform: rotateY(0deg);
+} 
+/* testing flip-card keyboard access */
+
+
+
+
+
+
+
+
+
 @media screen and (prefers-reduced-motion: reduce){
     .flip-card{
       animation: none;
@@ -339,42 +375,34 @@ img {
 
 
 /* parallax */
-.parallax {
-	/* The image used */
-	background-image: url("../images/dots_parallax_bacgground.jpeg");
+	/* backdrop-filter:blur(30px); */
   
-	/* Set a specific height */
-	min-height: 200px;
-  
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-  }
+	
+
 
 
 
 @media only screen and (min-width:768px)
 {
-	nav ul{
+	nav ul {
 		display: grid;
 		grid-template-columns: 50% 50%;
 	}
 
-	.grid, .flex {
+	.grid{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
+
 }
 
 @media only screen and (min-width:1200px)
 {
-	nav ul{
+	nav ul {
 		display: flex;
 	}
 
-	.grid, .flex {
+	.grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
@@ -383,9 +411,74 @@ img {
 		width: 275px;
 	}
 
-	.flex_image {
-		display:flex;
+}
+
+
+/* extra */
+
+/* 1. dark mode */
+/* .darkmode {
+	background-color: rgb(175, 172, 172);
+	color: rgb(177, 41, 41);
+} */
+
+
+/* 2. animations */
+
+/* 2-1 rotate */
+
+/* 3.hide and show */
+button {
+	display: inline-block;
+	padding-left: auto;
+	padding-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 40%;
+	font-size: 80%;
+	border: solid 1px black;
+	background-color:rgb(245, 183, 155)
+}
+
+/* h1 text animation */
+/* h1.testing {
+	color:rgb(255, 118, 94);
+	-webkit-text-stroke: 0.3vw 2px;
+	text-transform: uppercase;
+}
+
+h1.testing::before
+{
+	content: attr(data-text);
+	color:#01fe87;
+	width:0;
+	height:100%;
+	-webkit-text-stroke: 0vw #383d52;
+	border-right: 2px solid #01fe87;
+	animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+	0%, 10%, 100% {
+		width: 0;
 	}
 
+	70%, 90% {
+		width: 0;
+	}
 }
+
+#testing {
+	content: attr(data-text);
+	color:#01fe87;
+	width:0;
+	height:100%;
+	-webkit-text-stroke: 0vw #383d52;
+	border-right: 2px solid #01fe87;
+	animation: animate 6s linear infinite;
+} */
 

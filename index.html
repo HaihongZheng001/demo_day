@@ -18,7 +18,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/1315601479.js" crossorigin="anonymous"></script>
+	<!-- <script src="https://kit.fontawesome.com/1315601479.js" crossorigin="anonymous"></script> -->
 	<title>Yayoyi Kusama</title>
 </head>
 
@@ -35,6 +35,7 @@
 				<li><a href = "lifestory.html">Lifestory</a></li>
 				<li><a href = "artwork.html">Artwork</a></li>
 				<li><a href = "book.html">Book</a></li>
+				<li><a href = "contact.html">Contact</a></li>
 			</ul>
 		</nav>
 		<!-- The h1 is a semantic tag that aids accessibility -->
@@ -45,14 +46,14 @@
 	<main>
 	
 	<figure>
-	<div class="flip-card">
+	<div class="flip-card" tabindex="0">
 		<div class="flip-card-inner">
-			<div class="flip-card-front">
+			<div class="flip-card-front"  tabindex="0">
 			
 			<img src="images/kusama_quote_flipcard.jpeg" width="200" alt="kusama's quote on flipcard" id = "flip_card_image"/>
 			<figcaption>Hover image to view quote.</figcaption>
 			</div>
-			<div class="flip-card-back">
+			<div class="flip-card-back"  tabindex="0">
 			<h1>Quote</h1>
 			<p>My life is a dot lost among thousands of other dots.</p>
 			<p>-- Yayoi Kusama</p>
@@ -76,31 +77,7 @@
 
 	
 
-	<form
- 	 action="https://formspree.io/f/xlezlzob"
-  	 method="POST"
-	>
-		
-		<fieldset>
-			<legend>Contact Form</legend>
-			<i class="fa-solid fa-face-smile-wink"></i>
-			<label for="name_id">Your Name</i></label> 
-			<input type="text" name="user_name" id="name_id" placeholder="Enter Your Name" required>
-			<i class="fa-solid fa-at"></i>			<label for="email_id">Your Email</label>
-			<input type="email" name="email" id="email_id" placeholder="Enter Your Email" required>
-			<i class="fa-solid fa-phone"></i>
-			<label for="phone_id">Your Phone Number</label>
-			<input type="tel" name="userphone" id="phone_id" placeholder="Enter Your Phone (Format: 123-456-7890)" required>
-			<i class="fa-solid fa-message"></i>
-			<label for="message_id">Leave A Message</label>
-			<textarea name="message" id="message_id" placeholder="Leave your message" ></textarea>
-
-			<input type="checkbox" name="Subscribe" id="subscribe_id"> 
-			<label for="subscribe_id">Remember me</label>
-
-			<input type="submit" value="Click to submit!">
-		</fieldset>
- 	</form>
+	
 
 	</main>
 
