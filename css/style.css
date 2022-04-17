@@ -41,8 +41,9 @@ h1{
 
 /*Style the images*/
 img{
-    height: 200px;
-    width: 200px;
+	display:block;
+    height: 50%;
+    width: 50%;
     border: 2px dashed black;
     padding: 10px;
     border-radius: 2px;
@@ -224,9 +225,6 @@ input {
 	color:black;
   }	
 
-  
-
-  
 
   /*icon*/
   .fa-solid {
@@ -274,7 +272,9 @@ input {
 
 
 img {
-	width:90%;
+	width:50%;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -377,6 +377,14 @@ img {
 	.grid, .flex {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	#animation {
+		width: 275px;
+	}
+
+	.flex_image {
+		display:flex;
 	}
 
 }
