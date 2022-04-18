@@ -6,7 +6,7 @@ body{
 	margin:1%;
 	padding:1%;
 	font-size:150%;
-	/* background-image: url('../images/background.png') */
+	background-image: url('../images/background.png')
 	
 }
 
@@ -38,6 +38,24 @@ h1{
 	text-decoration: none;
 
 }
+
+/* hide skip to main */
+a.skip:focus {
+	left: 50px;
+	top: 20px;
+}
+
+a.skip{
+	background: white;
+	padding: 6px;
+	-webkit-transition: top 1s ease-out;
+	transition: left 1s ease-out;
+	z-index: 1;
+	position: absolute;
+	left: -500px;
+  }
+
+
 
 /*Style the images*/
 img{
@@ -376,8 +394,37 @@ img {
 
 /* parallax */
 	/* backdrop-filter:blur(30px); */
-  
+	.parallax {
+		/* The image used */
+		background-image: url("../images/kusama_parallax_background.jpeg");
+	  
+		/* Set a specific height */
+		min-height: 500px;
+	  
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	  }
+
+	  @media (prefers-reduced-motion: reduce) {
+		.parallax {
+			animation: none;
+		}
+	}
 	
+	  h3 {
+		  color:black;
+		  font-style: italic;
+		  font-size:larger;
+		  width:60%;
+		  padding-top:10%;
+		  padding-left: 50%;
+		  text-shadow: 3px 3px white;
+
+	  }
+	 
 
 
 
@@ -394,6 +441,12 @@ img {
 		grid-template-columns: 1fr 1fr;
 	}
 
+	.flex {
+		display: flex;
+	}
+	
+	
+
 }
 
 @media only screen and (min-width:1200px)
@@ -405,6 +458,15 @@ img {
 	.grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.flex {
+		display:flex;
+		flex-wrap: nowrap;
+		overflow:scroll;
+		width: 100%;
+		height: 100%;
+		justify-content: left;
 	}
 
 	#animation {
