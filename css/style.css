@@ -410,7 +410,7 @@ img {
 
 	  @media (prefers-reduced-motion: reduce) {
 		.parallax {
-			animation: none;
+			background-attachment: scroll;
 		}
 	}
 	
