@@ -377,30 +377,32 @@ img {
   }
 
 
+p.parallax {
+	display: none;
+}
 
 
 
-	  @media (prefers-reduced-motion: reduce) {
-		.parallax {
-			background-attachment: scroll;
-		}
-
-		.flip-card-inner {
-			transition: none;
-		}
+@media (prefers-reduced-motion: reduce) {
+	.parallax {
+		background-attachment: scroll;
 	}
-	
-	  p.parallax {
-		  color:rgb(0, 0, 0);
-		  font-style: italic;
-		  font-size:50px;
-		  width:60%;
-		  padding-top:10%;
-		  padding-left: 50%;
-		  text-shadow: 3px 3px white;
 
-	  }
+	.flip-card-inner {
+		transition: none;
+	}
+}
 
+p.parallax {
+	color:rgb(0, 0, 0);
+	font-style: italic;
+	font-size:50px;
+	width:60%;
+	padding-top:10%;
+	padding-left: 50%;
+	text-shadow: 3px 3px white;
+
+}
 
 
 
@@ -410,7 +412,7 @@ img {
 		grid-template-columns: 50% 50%;
 	}
 
-	.grid{
+	.grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
@@ -457,14 +459,14 @@ img {
 		margin-right: 8em;
 		background-color: rgb(233, 247, 251);
 	}
-	
+
 
 	/* parallax */
 	/* backdrop-filter:blur(30px); */
 	.parallax {
 		/* The image used */
 		background-image: url("../images/kusama_parallax_background.jpeg");
-	  
+
 		/* Set a specific height */
 		min-height: 500px;
 		margin-top:1em;
@@ -476,7 +478,17 @@ img {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-	  }
+	}
+
+	p.parallax {
+		color:rgb(0, 0, 0);
+		font-style: italic;
+		font-size:50px;
+		width:60%;
+		padding-top:10%;
+		padding-left: 50%;
+		text-shadow: 3px 3px white;
+	}
 
 }
 
