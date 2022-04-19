@@ -10,7 +10,8 @@ body {
 }
 
 p {
-	line-height: 30px;
+	line-height: 1.2em;
+	font-size: 1em;
 }
 
 
@@ -21,22 +22,21 @@ main {
 /*Make the h1 heading bigger with a bold font*/
 h1 {
 	display: block;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 	margin: 50px 0;
 	text-align: center;
-	line-height: 70px;
+	line-height: 1.2em;
 }
-
-
 
 
 .active{
     text-transform: uppercase;
 	text-align: center;
-	border: solid 5px yellow;
+	/* border: solid 5px yellow; */
 	font-size: 120%;
 	font-weight: bolder;
+	background-color:yellow;
 }
 
 .active a{
@@ -71,7 +71,10 @@ img{
     padding: 10px;
     border-radius: 2px;
     margin: 10px;
+	object-fit: cover;
 }
+
+
 
 /* img:hover {
 
@@ -95,7 +98,7 @@ img{
 
 
 h2{
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 	line-height: 60px;
 }
@@ -134,13 +137,14 @@ nav ul {
 
 nav li{
 	/* background-color: rgb(233, 233, 233);*/
-	padding:20px;
+	padding:10px;
 	/* width:25%; */
 	/* border:1px solid rgb(148, 148, 144);*/
 	display: inline-block;
 	text-align: center;
 	/* width: 20%; */
-	margin: 20px;
+	margin: 10px;
+	font-size:smaller;
 }
 
 
@@ -258,7 +262,6 @@ textarea:focus {
 	color: rgb(255, 118, 94);
 }
   /*animation*/
-  
 @keyframes transition {
     0% {width: 25px; opacity: 0; border-radius: 50px;}
     100% {width: 275px; opacity: 1;border-radius: 0px;}
@@ -279,32 +282,43 @@ textarea:focus {
 }
 
 
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 
 .grid {
 	display: grid;
 	grid-template-columns: 1fr;
 }
 
-.grid img,
-.flex img {
-	width: 90%;
+.grid img {
+	width: 80%;
 	height: 90%;
 	margin-left: auto;
     margin-right: auto;
 }
 
-
-img {
-	width:50%;
-	margin-left: auto;
-    margin-right: auto;
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.flex img {
+	width: 60%;
+	height: 90%;
+}
+
+
+/* flex_life */
+.flex_life {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.flex_life img {
+	width: 80%;
+}
 
 
 
@@ -387,48 +401,258 @@ img {
 }
 
 
+.parallax p {
+	display: none;
+}
+
 
 @media only screen and (min-width:768px) {
 
+		/* font */
+		p, h2 {
+			font-size: larger;
+		}
+	
+		h1 {
+			font-size:2.5em;
+			line-height:1.5em;
+		}
+
+		.parallax p {
+			display: none;
+		}
+
+
+
+	/* navigation */
+	nav li {
+		margin:10px;
+		margin-left:5px;
+		margin-right:20px;
+		padding:5px;
+		font-size:20px;
+		text-align:left;
+	}
+
+	.active{
+		text-transform: uppercase;
+		text-align: left;
+		border: solid 5px yellow;
+		font-size: 80%;
+		font-weight: bolder;
+		background-color:trans;
+	}
 
 	nav ul {
 		grid-template-columns: 50% 50%;
 	}
 
+
+	/* flex */
+
+	.flex {
+		justify-content: space-evenly;
+		flex-flow: wrap-reverse;
+		row-gap:50px;
+	}
+
+	.flex img {
+		flex-basis: 30%;
+	}
+
+	#flex3, #flex6 {
+		flex-basis: 40%;
+		height: 60%;
+	}
+
+	
+
+	/* flex_life */
+	.flex_life {
+		justify-content:space-evenly;
+		row-gap: 50px;
+	}
+
+	.flex_life img {
+		width:40%;
+	}
+
+	/* #medium_image {
+		grid-row-start: 1;
+  		grid-row-end: 3;
+		grid-column-start: 1;
+  		grid-column-end: 3;
+	} */
+
+	/* grid */
+
 	.grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		column-gap: 20px;
+		row-gap: 50px;
 	}
 
-	.flex {
-		display: flex;
-		width:50%;
-		margin-left: auto;
-		margin-right: auto;
+	#image_1 {
+		grid-column: 1/3;
 	}
+
+	#image_3 {
+		grid-column: 1/3;
+		grid-row: 3/4;
+	}
+	
+	#image_9 {
+		grid-column: 1/3;
+		grid-row: 6/7;
+	}
+
 }
 
 @media only screen and (min-width:1200px)
 {
+	/* font */
+	h2 {
+		font-size: larger;
+	}
+
+	p {
+		font-size: larger;
+		line-height:2em;
+	}
+
+	h1 {
+		font-size:3em;
+		line-height:2em;
+	}
+
+	
+
+
+
+	/* navigation */
+	nav li {
+		margin:50px;
+		margin-left:10px;
+		padding:5px;
+		font-size:30px;
+		text-align: justify;
+	}
+
+	.active{
+		text-transform: uppercase;
+		text-align: justify;
+		border: solid 5px yellow;
+		font-size: 110%;
+		font-weight: bolder;
+		background-color: transparent;
+	}
+
 	nav ul {
 		display:flex;
 		flex-flow:row;
-		justify-content: space-evenly;
+		justify-content:end;
 	}
+
+	
+
+	/* grid */
 
 	.grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		row-gap: 30px;
 	}
 
-	.flex {
-		display:flex;
-		flex-wrap: nowrap;
-		overflow:scroll;
-		width: 100%;
-		height: 100%;
-		justify-content: left;
+
+	#image_1 {
+		grid-column:1/5;
+		grid-row:1/3;
+
 	}
+
+	/* #image_2 {
+		grid-column:5/7;
+		grid-row:1/2;
+	} */
+
+	
+
+	#image_3 {
+		grid-column:5/7;
+		grid-row:2/3;
+
+	}
+
+	/* #image_4 {
+		grid-column:1/3;
+		grid-row:3/3;
+	} */
+
+	#image_5{
+		grid-column:1/3;
+	}
+
+	#image_6{
+		grid-column:3/5;
+	}
+
+	#image_7{
+		grid-column:3/5;
+		grid-row:4/4;
+	}
+
+	#image_8{
+		grid-column:5/6;
+	}
+
+	#image_9 {
+		grid-column: 6/7;
+		grid-row: 1/2;
+	}
+	/* #image_2{
+		grid-column:6/7;
+	} */
+
+
+
+
+	.flex {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		flex-direction: row-reverse;
+		row-gap: 200px;
+		column-gap: 10px;
+	}
+	
+	.flex img {
+		flex-basis: 20%;
+	}
+
+	#flex3, #flex6 {
+		flex-basis: 20%;
+	}
+
+	/* flex_life */
+	.flex_life {
+		justify-content:flex-start;
+		flex-direction:row-reverse;
+	}
+
+	.flex_life img {
+		width:25%;
+	}
+
+	/* img{
+		display:block;
+		height: 50%;
+		width: 50%;
+		border: 2px dashed black;
+		padding: 10px;
+		border-radius: 2px;
+		margin: 10px;
+	} */
 
 	#animation {
 		width: 275px;
@@ -444,37 +668,29 @@ img {
 	}
 
 
-/* parallax */
-	/* backdrop-filter:blur(30px); */
+	/* parallax */
 	.parallax {
 		/* The image used */
 		background-image: url("../images/kusama_parallax_background.jpeg");
-
+	  
 		/* Set a specific height */
 		min-height: 500px;
-		margin-top:1em;
-		width: 90%;
-		margin-bottom: 1em;
-
+	  
 		/* Create the parallax scrolling effect */
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+	  }
+
+
+	.parallax p {
+		display:block;
+		font-size: 2em;
+		text-align: right;
+		text-shadow: 4px 4px white;
+
 	}
-
-	p.parallax {
-		color:rgb(0, 0, 0);
-		font-style: italic;
-		font-size:50px;
-		width:60%;
-		padding-top:10%;
-		padding-left: 50%;
-		text-shadow: 3px 3px white;
-	}
-
-
-	
 
 }
 
@@ -493,7 +709,7 @@ img {
 /* 2-1 rotate */
 
 /* 3.hide and show */
-button {
+/* button {
 	display: inline-block;
 	padding-left: auto;
 	padding-right: auto;
@@ -507,7 +723,7 @@ button {
 	font-size: 80%;
 	border: solid 1px black;
 	background-color:rgb(245, 183, 155)
-}
+} */
 
 /* h1 text animation */
 /* h1.testing {
