@@ -26,7 +26,6 @@ h1{
 	font-weight: bold;
 	margin: 50px 0;
 	text-align: center;
-	line-height: 100%;
 }
 
 
@@ -98,7 +97,6 @@ img:hover {
 
 h2{
 	font-size: 2em; 
-	line-height: 100%;
 	font-weight: bold;
 }
 
