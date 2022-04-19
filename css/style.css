@@ -377,7 +377,11 @@ img {
   }
 
 
-p.parallax {
+  p.parallax {
+	display: none;
+}
+
+.parallax {
 	display: none;
 }
 
@@ -408,6 +412,14 @@ p.parallax {
 
 
 @media only screen and (min-width:768px) {
+	p.parallax {
+		display: none;
+	}
+
+	.parallax {
+		display: none;
+	}
+
 	nav ul {
 		grid-template-columns: 50% 50%;
 	}
