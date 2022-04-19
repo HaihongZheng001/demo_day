@@ -26,6 +26,7 @@ h1{
 	font-weight: bold;
 	margin: 50px 0;
 	text-align: center;
+	line-height: 70px;
 }
 
 
@@ -98,6 +99,7 @@ img:hover {
 h2{
 	font-size: 2em; 
 	font-weight: bold;
+	line-height: 60px;
 }
 
 /*Improve the spacing for paragraphs AND headings*/
