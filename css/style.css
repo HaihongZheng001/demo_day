@@ -1,13 +1,12 @@
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
-body{
+body {
 	font-family: 'Josefin Sans', sans-serif;
 	background-color: white;
 	margin:1%;
 	padding:1%;
 	font-size:150%;
 	background-image: url('../images/background.png');
-
 }
 
 p {
@@ -20,7 +19,7 @@ main {
 	margin-top: 25px;
 }
 /*Make the h1 heading bigger with a bold font*/
-h1{
+h1 {
 	display: block;
 	font-size: 2em;
 	font-weight: bold;
@@ -74,8 +73,7 @@ img{
     margin: 10px;
 }
 
-/* 
-img:hover {
+/* img:hover {
 
 	background-color: rgb(133, 216, 255);
 	border: 3px solid rgb(16, 12, 236);
@@ -97,7 +95,7 @@ img:hover {
 
 
 h2{
-	font-size: 2em; 
+	font-size: 2em;
 	font-weight: bold;
 	line-height: 60px;
 }
@@ -166,7 +164,7 @@ footer {
 	margin-top: 100px;
 	padding-bottom: 20px;
 	padding-top: 10px;
-	
+
 }
 
 /*Added this so the links stay the same color*/
@@ -204,7 +202,7 @@ input {
 	box-sizing: border-box;
 }
 
-  #message {
+#message {
 	/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	display: block;
 	width: 100%;
@@ -215,20 +213,20 @@ input {
 	padding-bottom: 70px;
 	/* border: 1px solid #ccc;
 	font-size: 15px; */
-  }
+}
 
-  #submit_button {
-	  width: 50%;
-	  display: block;
-	  margin-left:auto;
-	  margin-right: auto;
-  }
+#submit_button {
+	width: 50%;
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+}
 
-  input[type=checkbox] {
-	  width:auto;
-  }
+input[type=checkbox] {
+	width:auto;
+}
 
-  input[type=submit] {
+input[type=submit] {
 	font-size: 80%;
 	background-color:rgb(35, 98, 128);
 	color: white;
@@ -239,26 +237,26 @@ input {
 	border-radius: 50px;
 	cursor:grab;
 	width: 100%;
-	
-  }
-  
-  input:focus {
-	border: 5px solid blue;
-	background-color: yellow;
-	color:black;
-  }
 
-  textarea:focus {
+}
+  
+input:focus {
 	border: 5px solid blue;
 	background-color: yellow;
 	color:black;
-  }	
+}
+
+textarea:focus {
+	border: 5px solid blue;
+	background-color: yellow;
+	color:black;
+}	
 
 
   /*icon*/
-  .fa-solid {
-	  color: rgb(255, 118, 94);
-  }
+.fa-solid {
+	color: rgb(255, 118, 94);
+}
   /*animation*/
   
 @keyframes transition {
@@ -333,9 +331,9 @@ img {
 	height: 400px;
 	/* border: 1px solid #f1f1f1; */
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
+}
 
-  /* This container is needed to position the front and back side */
+/* This container is needed to position the front and back side */
   .flip-card-inner {
 	position: relative;
 	width: 100%;
@@ -377,15 +375,6 @@ img {
   }
 
 
-  p.parallax {
-	display: none;
-}
-
-.parallax {
-	display: none;
-}
-
-
 
 @media (prefers-reduced-motion: reduce) {
 	.parallax {
@@ -397,28 +386,10 @@ img {
 	}
 }
 
-p.parallax {
-	color:rgb(0, 0, 0);
-	font-style: italic;
-	font-size:50px;
-	width:60%;
-	padding-top:10%;
-	padding-left: 50%;
-	text-shadow: 3px 3px white;
-
-}
-
-
 
 
 @media only screen and (min-width:768px) {
-	p.parallax {
-		display: none;
-	}
 
-	.parallax {
-		display: none;
-	}
 
 	nav ul {
 		grid-template-columns: 50% 50%;
@@ -473,7 +444,7 @@ p.parallax {
 	}
 
 
-	/* parallax */
+/* parallax */
 	/* backdrop-filter:blur(30px); */
 	.parallax {
 		/* The image used */
@@ -501,6 +472,9 @@ p.parallax {
 		padding-left: 50%;
 		text-shadow: 3px 3px white;
 	}
+
+
+	
 
 }
 
