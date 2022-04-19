@@ -1,13 +1,17 @@
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
 body{
+	line-height: 30px;
 	font-family: 'Josefin Sans', sans-serif;
 	background-color: white;
 	margin:1%;
 	padding:1%;
 	font-size:150%;
-	background-image: url('../images/background.png')
+	background-image: url('../images/background.png');
+
 }
+
+
 
 
 
@@ -372,24 +376,7 @@ img {
 
 
 
-/* parallax */
-	/* backdrop-filter:blur(30px); */
-	.parallax {
-		/* The image used */
-		background-image: url("../images/kusama_parallax_background.jpeg");
-	  
-		/* Set a specific height */
-		min-height: 500px;
-		margin-top:1em;
-		width: 90%;
-		margin-bottom: 1em;
 
-		/* Create the parallax scrolling effect */
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	  }
 
 	  @media (prefers-reduced-motion: reduce) {
 		.parallax {
@@ -470,7 +457,24 @@ img {
 	}
 	
 
-	
+	/* parallax */
+	/* backdrop-filter:blur(30px); */
+	.parallax {
+		/* The image used */
+		background-image: url("../images/kusama_parallax_background.jpeg");
+	  
+		/* Set a specific height */
+		min-height: 500px;
+		margin-top:1em;
+		width: 90%;
+		margin-bottom: 1em;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	  }
 
 }
 
