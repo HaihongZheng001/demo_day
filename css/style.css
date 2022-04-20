@@ -291,9 +291,10 @@ textarea:focus {
 
 .grid img {
 	width: 80%;
-	height: 90%;
-	margin-left: auto;
-    margin-right: auto;
+	height: 80%;
+	margin-left: 10px;
+    margin-right: 10px;
+	justify-self: center;
 }
 
 .flex {
@@ -317,7 +318,7 @@ textarea:focus {
 }
 
 .flex_life img {
-	width: 80%;
+	width: 70%;
 }
 
 
@@ -391,8 +392,8 @@ textarea:focus {
 
 
 @media (prefers-reduced-motion: reduce) {
-	.parallax {
-		background-attachment: scroll;
+	.parallax p{
+		background-attachment:scroll;
 	}
 
 	.flip-card-inner {
@@ -487,11 +488,14 @@ textarea:focus {
 	/* grid */
 
 	.grid {
-		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 		column-gap: 20px;
 		row-gap: 50px;
+	}
+
+	.grid img {
+		height:80%;
 	}
 
 	#image_1 {
@@ -512,6 +516,7 @@ textarea:focus {
 
 @media only screen and (min-width:1200px)
 {
+
 	/* font */
 	h2 {
 		font-size: larger;
@@ -675,6 +680,7 @@ textarea:focus {
 	  
 		/* Set a specific height */
 		min-height: 500px;
+		width:auto;
 	  
 		/* Create the parallax scrolling effect */
 		background-attachment: fixed;
@@ -690,6 +696,12 @@ textarea:focus {
 		text-align: right;
 		text-shadow: 4px 4px white;
 
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.parallax p{
+			background-attachment:scroll;
+		}
 	}
 
 }
